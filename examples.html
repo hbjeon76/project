@@ -51,9 +51,9 @@ function decodeArrayOfStrings(buffer, encoding) {
   return strings;
 }
 
-var strings = ["Hello", "string", "encoding!"];
+var strings = ["Hello", "string", "encoding!", "신한금투"];
 var buffer = encodeArrayOfStrings(strings);
-var results = decodeArrayOfStrings(buffer, "utf-8");
+var results = decodeArrayOfStrings(buffer, "euc-kr");
 document.write("Encoded " + JSON.stringify(strings) + "<br>");
 document.write("Decoded " + JSON.stringify(results) + "<br>");
 </script>
